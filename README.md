@@ -9,5 +9,6 @@ https://engineering.fb.com/ios/reducing-fooms-in-the-facebook-ios-app/
 You should import your own crash detector and report system to complete the tool.
 
 In my test, AppUpgrade and OSUpgrade won't shutdown the app when you are using, so I skip those two checking.
+
 And FOOM case also includes the ANR case, because the system notification call back won't trigger if your main thread is busy.
 
