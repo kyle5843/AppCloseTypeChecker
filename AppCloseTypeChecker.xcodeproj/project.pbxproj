@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27830A7524DD07E400B48344 /* AppCloseTypeChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 27830A7324DD07E400B48344 /* AppCloseTypeChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27830A7C24DD080000B48344 /* AppCloseTypeChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27830A7B24DD080000B48344 /* AppCloseTypeChecker.swift */; };
+		27830A7E24DD09BF00B48344 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27830A7D24DD09BF00B48344 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27830A7024DD07E400B48344 /* AppCloseTypeChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCloseTypeChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27830A7324DD07E400B48344 /* AppCloseTypeChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCloseTypeChecker.h; sourceTree = "<group>"; };
 		27830A7424DD07E400B48344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27830A7B24DD080000B48344 /* AppCloseTypeChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCloseTypeChecker.swift; sourceTree = "<group>"; };
+		27830A7D24DD09BF00B48344 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,8 @@
 		27830A7224DD07E400B48344 /* AppCloseTypeChecker */ = {
 			isa = PBXGroup;
 			children = (
-				27830A7324DD07E400B48344 /* AppCloseTypeChecker.h */,
+				27830A7B24DD080000B48344 /* AppCloseTypeChecker.swift */,
+				27830A7D24DD09BF00B48344 /* File.swift */,
 				27830A7424DD07E400B48344 /* Info.plist */,
 			);
 			path = AppCloseTypeChecker;
@@ -59,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27830A7524DD07E400B48344 /* AppCloseTypeChecker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 				TargetAttributes = {
 					27830A6F24DD07E400B48344 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27830A7C24DD080000B48344 /* AppCloseTypeChecker.swift in Sources */,
+				27830A7E24DD09BF00B48344 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		27830A7924DD07E400B48344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyle.peng.AppCloseTypeChecker.AppCloseTypeChecker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		27830A7A24DD07E400B48344 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
